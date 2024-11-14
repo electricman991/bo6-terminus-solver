@@ -35,12 +35,10 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-      - name: Enable pnpm
-        run: corepack enable pnpm
       - name: Install dependencies
-        run: pnpm ci
+        run: npm ci
       - name: Build
-        run: pnpm build
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
