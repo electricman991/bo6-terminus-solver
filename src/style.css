@@ -82,6 +82,40 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* Adjust space between labels and inputs */
+  width: 200px; /* Adjust width as needed */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between label and input */
+}
+
+
+label {
+  font-weight: bold;
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 20px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
